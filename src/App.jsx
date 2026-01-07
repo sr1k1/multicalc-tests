@@ -8,13 +8,16 @@ function App() {
   const [operand, setOperand] = useState(0);
 
   return (
-    <main>
-      <h1>MultiCalc</h1>
-      <OperandContext.Provider value={{ operand, setOperand }}>
-        <FormWrapper />
-        <CalculatorWrapper />
-      </OperandContext.Provider>
-    </main>
+    <>
+      <main>
+        <h1>Multi-Calc</h1>
+        <heading>Plant</heading>
+        <OperandContext.Provider value={{ operand, setOperand }}>
+          <FormWrapper />
+          <CalculatorWrapper />
+        </OperandContext.Provider>
+      </main>
+    </>
   );
 }
 
